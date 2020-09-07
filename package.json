@@ -1,0 +1,45 @@
+{
+  "name": "physical_ftdp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode localhost",
+    "dev": "vue-cli-service serve --mode development",
+    "prod": "vue-cli-service serve --mode production",
+    "test": "vue-cli-service serve --mode test",
+    "build": "vue-cli-service build --mode localhost",
+    "build_dev": "vue-cli-service build --mode development",
+    "build_test": "vue-cli-service build --mode test",
+    "build_prod": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint --fix"
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "echarts": "^4.3.0",
+    "element-ui": "^2.13.1",
+    "kim-vue-touch": "^1.1.5",
+    "lib-flexible": "^0.3.2",
+    "postcss-px2rem-exclude": "0.0.6",
+    "vant": "^2.8.2",
+    "vconsole": "^3.3.4",
+    "vue": "^2.6.10",
+    "vue-directive-touch": "^1.0.28",
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.23.2",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "compression-webpack-plugin": "^1.1.12",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
