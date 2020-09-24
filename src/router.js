@@ -39,6 +39,23 @@ const router = new Router({
       }
     },
 
+    {
+      path: "/jd",
+      name: "jd",
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "about" */ "../src/views/jd/jd.vue"),
+      meta: {
+        // keepAlive: true,
+        title: "jd",
+        // requireAuth: true // 当有这个字段的时候,我们就认为这个路由页面是要有登录权限的
+      },
+
+
+    },
+
+
+
 
 
   ],
