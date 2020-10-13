@@ -9,7 +9,9 @@ body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-size: large;
-    background-color: #e0e9ea;
+    /* background-color: #e0e9ea; */
+    background-color: white;
+
     -webkit-font-smoothing: antialiased;
 }
 

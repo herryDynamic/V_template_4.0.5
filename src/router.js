@@ -8,7 +8,7 @@ const router = new Router({
   base: "/physical_ftdp",
   routes: [
     {
-      path: "/",
+      path: "/loading",
       name: "loading",
       // which is lazy-loaded when the route is visited.
       component: () =>
@@ -40,7 +40,7 @@ const router = new Router({
     },
 
     {
-      path: "/jd",
+      path: "/",
       name: "jd",
       // which is lazy-loaded when the route is visited.
       component: () =>
