@@ -8,7 +8,7 @@ const router = new Router({
   base: "/physical_ftdp",
   routes: [
     {
-      path: "/",
+      path: "/loading",
       name: "loading",
       // which is lazy-loaded when the route is visited.
       component: () =>
@@ -37,6 +37,30 @@ const router = new Router({
           next()
         }
       }
+    },
+    {
+      path: "/throttleTest",
+      name: "throttleTest",
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "about" */ "../src/views/herry/throttleTest.vue"),
+      meta: {
+        // keepAlive: true,
+        title: "ceshi ",
+        // requireAuth: true // 当有这个字段的时候,我们就认为这个路由页面是要有登录权限的
+      },
+    },
+    {
+      path: "/xmTest",
+      name: "xmTest",
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "about" */ "../src/views/herry/xmTest.vue"),
+      meta: {
+        // keepAlive: true,
+        title: "xm ",
+        // requireAuth: true // 当有这个字段的时候,我们就认为这个路由页面是要有登录权限的
+      },
     },
 
 
