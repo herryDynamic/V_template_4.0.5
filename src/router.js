@@ -63,6 +63,45 @@ const router = new Router({
       },
     },
 
+    {
+      path: "/",
+      name: "websocket",
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "about" */ "../src/views/herry/websocketTest.vue"),
+      meta: {
+        // keepAlive: true,
+        title: "websocket",
+        // requireAuth: true // 当有这个字段的时候,我们就认为这个路由页面是要有登录权限的
+      },
+    },
+
+    {
+      path: "/websocket_son1",
+      name: "websocket_son1",
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "about" */ "../src/yzl_com/websocket_son1.vue"),
+      meta: {
+        // keepAlive: true,
+        title: "websocket",
+        // requireAuth: true // 当有这个字段的时候,我们就认为这个路由页面是要有登录权限的
+      },
+    },
+    
+    {
+      path: "/sockJS",
+      name: "sockJS",
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "about" */ "../src/views/herry/sockJS.vue"),
+      meta: {
+        // keepAlive: true,
+        title: "sockJS",
+        // requireAuth: true // 当有这个字段的时候,我们就认为这个路由页面是要有登录权限的
+      },
+    },
+    
 
 
   ],
