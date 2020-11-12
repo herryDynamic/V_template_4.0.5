@@ -1,3 +1,12 @@
+<!--
+*@描述:websocket 本地
+*@版本:V1.0
+*@作者:白爱民
+*@Date:2020年1月22日11:00:06
+*@最后修改人:herry
+*@LastEditTime:2020年1月22日11:00:12
+*@说明：本地测试和nodejs打通双websocket-->
+
 <template>
   <div>
     <input type="text" id="input" />
