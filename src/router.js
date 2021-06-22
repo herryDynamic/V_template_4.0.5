@@ -39,6 +39,18 @@ const router = new Router({
       }
     },
     {
+      path: "/Echarts",
+      name: "Echarts",
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "about" */ "../src/views/SZYL/Echarts.vue"),
+      meta: {
+        // keepAlive: true,
+        title: "Echarts",
+        // requireAuth: true // 当有这个字段的时候,我们就认为这个路由页面是要有登录权限的
+      },
+    },
+    {
       path: "/throttleTest",
       name: "throttleTest",
       // which is lazy-loaded when the route is visited.
@@ -89,7 +101,7 @@ const router = new Router({
       },
     },
     {
-      path: "/",
+      path: "/websocket_txy_test",
       name: "websocket_txy_test",
       // which is lazy-loaded when the route is visited.
       component: () =>

@@ -1,5 +1,5 @@
 import axios from 'axios'// 引用官方的axios库，用于我们创建自己封装的axios
-import store from '../store'
+import store from '../store/index'
 import { Notify } from 'vant' //引用vant组件中的Toast 用于弹出提示框
 import router from '../router' //引用router，用于在某些错误情况下跳转路由
 

@@ -1,7 +1,7 @@
 
 /***************************************vue引入：****************************/
 import Vue from "vue";
-import Vuex from "vuex";
+// import Vuex from "vuex";
 
 
 /***************************************vant组件引入：****************************/
@@ -16,7 +16,7 @@ import { Message } from 'element-ui';
 /***************************************本地组件或者样式引入：****************************/
 import App from "./App.vue";
 import router from "./router";
-import store from "./store";
+import store from './store'
 import axios from "../src/utils/dynamicAxios";
 import changeFontSize from "./setHtmlFontSize";
 import { responseCode } from "../src/utils/responseCode"; // 引入后端返回code码
@@ -29,7 +29,7 @@ import echarts from "echarts"; // 引入echarts用于图表展示
 import vConsole from 'vconsole' // 引入手机调试神器
 
 // vue页面组件使用：
-Vue.use(Vuex);
+// Vue.use(Vuex);
 Vue.use(touch);
 Vue.use(Vant);
 Vue.use(ElementUI);

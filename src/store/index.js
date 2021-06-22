@@ -1,8 +1,9 @@
-import Vue from "vue";
-import Vuex from "vuex";
-Vue.use(Vuex);
+import Vue from 'vue'
+import Vuex from 'vuex'
+import echarts from './echarts'
+Vue.use(Vuex)
 
-const store = new Vuex.Store({
+export default new Vuex.Store({
   //要设置的全局访问的state对象
   state: {
     token: "", //用户token
@@ -57,15 +58,15 @@ const store = new Vuex.Store({
     libraryIdIndex: [
       {
         libraryId: "0445946",
-        componentId: require("../src/assets/super/library/user.jpg"),
+        componentId: require("../../src/assets/super/library/user.jpg"),
       },
       {
         libraryId: "0473771",
-        componentId: require("../src/assets/super/library/infoShow.jpg"),
+        componentId: require("../../src/assets/super/library/infoShow.jpg"),
       },
       {
         libraryId: "4833953",
-        componentId: require("../src/assets/super/library/numberIndex.jpg"),
+        componentId: require("../../src/assets/super/library/numberIndex.jpg"),
       },
     ],
 
@@ -352,5 +353,7 @@ const store = new Vuex.Store({
 
   },
   actions: {},
-});
-export default store;
+  modules: {
+    echarts: { ...echarts },
+  }
+})
