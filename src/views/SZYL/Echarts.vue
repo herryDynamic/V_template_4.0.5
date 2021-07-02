@@ -17,6 +17,7 @@
             />
       </div>
   </div>
+  <lineGraph/>
     
 
          
@@ -28,6 +29,9 @@
 import PidChart1 from '../../components/Echarts/PieChart1'
 import chartInit from '../../components/Echarts/chartInit.vue'
 import Bar from '../../components/Echarts/Bar.vue'
+import lineGraph from '../../components/Echarts/lineGraph.vue'
+
+
 export default {
   data() {
     return {
@@ -41,7 +45,7 @@ export default {
   },
 
   components: {
-    PidChart1 , chartInit , Bar
+    PidChart1 , chartInit , Bar ,lineGraph
   },
   methods: {
     clickBtn() {
