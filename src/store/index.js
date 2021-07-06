@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import echarts from './echarts'
+import getters from './getters'
+import echarts2 from './modules/echarts2'
+
 Vue.use(Vuex)
+
 
 export default new Vuex.Store({
   //要设置的全局访问的state对象
@@ -310,8 +314,8 @@ export default new Vuex.Store({
 
     management_groupName_List: [], // 存储模板管理页的group分组
   },
-  //用于监听state的变化的
-  getters: {},
+  // //用于监听state的变化的
+  // getters: {},
   mutations: {
     setMakeFormDataList(state, makeFormDataList) {
       state.makeFormDataList = makeFormDataList;
@@ -353,7 +357,10 @@ export default new Vuex.Store({
 
   },
   actions: {},
+  getters,
+  
   modules: {
     echarts: { ...echarts },
+    echarts2
   }
 })

@@ -1,9 +1,8 @@
-const CHARTDATA = 'CHARTDATA'
-const UPDATACHARTTITLEDATA = 'UPDATACHARTTITLEDATA'
 
+import TYPES from './type'
 const mutation = {
  // 修改图表展示数据
- [CHARTDATA] (state, data) {
+ [TYPES.CHARTDATA] (state, data) {
     const headerData = []
     for (let i = 0; i < data.data.length; i++) {
       headerData.push([])
@@ -16,7 +15,7 @@ const mutation = {
     }
     state.chartData.dataBJ = JSON.parse(JSON.stringify(headerData))
   },
-  [UPDATACHARTTITLEDATA] (state, data) {
+  [TYPES.UPDATACHARTTITLEDATA] (state, data) {
     const header = data.map((item, index) => {
       return {
         name: item.label,
